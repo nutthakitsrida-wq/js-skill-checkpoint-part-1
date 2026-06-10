@@ -6,3 +6,8 @@ const myTodo = [
   { id: 4, todo: "Wash dishes" },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+// เพิ้ม to do ใหม่
+// จำ syntax ไม่ได้ครับ
+myTodo[3].todo = "Go to the gym"
+// ลบตัวสุดท้าย จำ syntax ไม่ได้ครับ
+console .log(myTodo)
