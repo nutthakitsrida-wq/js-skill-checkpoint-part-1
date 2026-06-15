@@ -5,9 +5,18 @@ const myTodo = [
   { id: 3, todo: "Call mom" },
   { id: 4, todo: "Wash dishes" },
 ];
-// เริ่มเขียนโค้ดตรงนี้
-// เพิ้ม to do ใหม่
-// จำ syntax ไม่ได้ครับ
-myTodo[3].todo = "Go to the gym"
-// ลบตัวสุดท้าย จำ syntax ไม่ได้ครับ
-console .log(myTodo)
+
+myTodo.push({
+  id: 5,
+  todo: "Walk the dog",
+});
+
+myTodo[3].todo = "Go to the gym";
+
+myTodo.pop();
+
+console.log(myTodo);
+
+const lastTodo = myTodo[myTodo.length - 1];
+
+console.log(`To-do id: ${lastTodo.id}, ${lastTodo.todo}`);

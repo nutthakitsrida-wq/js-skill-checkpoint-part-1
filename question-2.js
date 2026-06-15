@@ -4,10 +4,18 @@ const inventory = [
   { name: "Banana", price: 10, quantity: 50 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
-inventory[0].quantity = 200
-// ผมจำ syntax ที่เพิ้ม orange เข้ามาไม่ได้ครับ //
-let total = 0
-for (let item of inventory){
-  total = total + item.price * item.quantity  
+inventory[0].quantity = 200;
+
+inventory.push({
+  name: "Orange",
+  price: 20,
+  quantity: 300,
+});
+
+let total = 0;
+
+for (let item of inventory) {
+  total = total + item.price * item.quantity;
 }
-console.log(  `มูลค่ารวมของสินค้าทั้งหมดในจำนวนสต๊อก ${total}`)
+
+console.log(`มูลค่ารวมของสินค้าทั้งหมดในสต๊อก ${total} บาท`);
